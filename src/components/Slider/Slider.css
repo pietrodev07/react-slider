@@ -1,0 +1,58 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+
+.main .slider {
+  width: 500px;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow-x: hidden;
+}
+
+.main .buttons-container {
+  width: 500px;
+  display: flex;
+}
+
+.main .buttons-container .btn {
+  background-color: #3892C2FF;
+  font-size: 0.55rem;
+  font-weight: 700;
+  padding: 0.4rem 1.25rem;
+  margin: 0 auto;
+  border: none;
+  border-radius: 16px;
+  transition: all 0.125s ease;
+  cursor: pointer;
+}
+
+.main .buttons-container .btn:hover {
+  background-color: #0077b6ff;
+}
+
+.main .buttons-container .btn .icon {
+  padding: 0;
+  margin: 0;
+  font-size: 1rem;
+}
+
+@media (max-width: 500px) {
+
+  .main .slider {
+    width: 95%;
+    height: 180px;
+  }
+
+  .main .buttons-container {
+    width: 95%;
+  }
+
+}
